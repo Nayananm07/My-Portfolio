@@ -1,0 +1,223 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <mete http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2d22506d0b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+     <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.jpeg" alt="logo" width="200px" height="100px">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#Portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web developer</p>
+                <h1>Hello I'm <span>Nayana</span><br> from India</h1>
+            </div>
+        </div>
+     </div> 
+        
+     <!----------about-------------->
+     <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col1">
+                    <img src="about.png" width="450px" height="500px">
+                </div>
+                <div class="about-col2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>"I am a passionate and detail-oriented software developer eager to apply my knowledge of Java, data structures, and web technologies to real-world challenges. With a strong foundation in problem-solving and a keen interest in AI and machine learning, I am always looking for opportunities to learn and grow. Whether it's crafting efficient algorithms or developing intuitive user interfaces, I believe in writing clean, scalable, and impactful code. I am excited to embark on my professional journey, contribute to innovative projects, and continuously evolve in the ever-changing tech landscape."</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Machine Learning</span><br>Data Analysis</li>
+                            <li><span>Web Development</span><br>Website/App Development</li>
+                            <li><span>Full Stack Development</span><br>Building websites</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>10/02/2025 - current</span><br>Full Stack Development Intern at The Developers Arena </li>
+                            <li><span>10/02/2025 - current</span><br>Web Development Intern at Unified Mentor</li>
+                            <li><span>11/12/2023 - 11/02/2024</span><br>Full Stack Development Intern at Dataphion</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022 - 2024</span><br>MCA from CMR University Bangalore</li>
+                            <li><span>2018 - 2021</span><br>BCA from PES Institute of Advanced Management Stidies Shimoga</li>
+                            <li><span>2016 - 2018</span><br>PUC from Anubhava Mantapa PU College Davanagere</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+
+     <!---------------- Services ------------------->
+     <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>"I provide professional web development services to create dynamic, high-performing, and scalable websites tailored to your needs. From building responsive and interactive websites to developing custom web applications, I focus on delivering seamless user experiences with clean, efficient code.</p>
+                    <a href="https://www.w3schools.com/webdev/">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Backend Development</h2>
+                    <p>"I specialize in backend development, building secure, scalable, and high-performance server-side applications that power seamless digital experiences. My expertise includes designing and optimizing databases, developing RESTful APIs, and ensuring efficient data processing for web applications.</p>
+                    <a href="https://www.tpointtech.com/dbms-tutorial">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Full Stack Development</h2>
+                    <p>"I provide full stack development services, building complete, end-to-end web applications with seamless front-end and back-end integration. From designing interactive and user-friendly interfaces to developing robust server-side logic, I ensure that every application is optimized for performance, security, and scalability.</p>
+                    <a href="https://www.udemy.com/topic/full-stack-web-development/?srsltid=AfmBOoqefxzzOOvWPQ1XALYzWg_LnMDub8jLpcg53lsfg8cCOALcwrYS">Learn more</a>
+                </div>
+            </div>
+        </div>
+     </div>
+
+     <!------------------------------ portfolio------------------------------->
+
+     <div id="Portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="wd.jpeg" alt="Web dev">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to talented people around the world Download it from play store</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="bd.jpeg" alt="Backend">
+                    <div class="layer">
+                        <h3>Quiz App</h3>
+                        <p>The app connects you to talented people around the world Download it from play store</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Fsd.jpeg" alt="Fullstack">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The app connects you to talented people around the world Download it from play store</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+     </div>
+
+     <!----------------------------- Contact -------------------------->
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> nadigmnayana@gmail.com</p>
+                    <p><i class="fa-solid fa-address-book"></i> +916362972251</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/nayana.nm.142"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="https://github.com/Nayananm07"><i class="fa-brands fa-square-github"></i></a>
+                        <a href="https://www.instagram.com/nadig_m_nayana"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/nayana-nm-4271941b8"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="Cover letter.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Nayana. Made with <i class="fas fa-heart"></i> by Easy Tutorials</p>
+        </div>
+     </div>
+
+     <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname)
+        {
+            for(tablink of tablinks)
+        {
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents)
+        {
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+        }
+     </script>
+     <script>
+        var sideme = document.getElementById("sidemenu");
+
+        function openmenu()
+        {
+            sideme.style.right= "0";
+        }
+
+        function closemenu()
+        {
+            sideme.style.right= "-200px";
+        }
+     </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwqOOwKh74z-IrpHc30pahtABTyN3W5AGTHkYfeZgu1HeiseDQERNCuIUoI8qam8YF3/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
